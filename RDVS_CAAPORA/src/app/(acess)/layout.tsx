@@ -17,6 +17,7 @@ import {
   useColorModeValue,
   Stack,
   useColorMode,
+  Image,
 } from "@chakra-ui/react";
 import {
   HamburgerIcon,
@@ -73,7 +74,7 @@ const { isOpen, onOpen, onClose } = useDisclosure();
   const transitionHeader = css`transition: opacity 500ms ease-in-out;`
     return ( 
         <>
-      <Box bg={useColorModeValue("#2E5F5D", "gray.900")}
+      <Box bg={useColorModeValue("#030D27", "gray.900")}
       //  px={4} opacity={0} _hover={{opacity: 1}} 
        px={4} 
        position="absolute" zIndex={1000} top={0} left={0} right={0}
@@ -87,7 +88,9 @@ const { isOpen, onOpen, onClose } = useDisclosure();
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={"center"}>
-            <Box>Logo</Box>
+          <Box boxSize='8%'>
+              <Image src="/LogoSiscountMini.png"/>
+            </Box>
             <HStack
               as={"nav"}
               spacing={4}

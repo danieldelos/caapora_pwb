@@ -57,7 +57,7 @@ const Logo = (props: any) => {
   return (
     <Box boxSize="35%">
       <Link href="/">
-        <Image src="/Logo2_bg_none.png" />
+        <Image src="/miniSemfundo.png" />
       </Link>
     </Box>
   );

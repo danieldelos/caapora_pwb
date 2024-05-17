@@ -26,13 +26,13 @@ export default function SplitScreen() {
                 position: 'absolute',
                 bottom: 1,
                 left: 0,
-                bg: '#AABEBD',
+                // bg: '#197038',
                 zIndex: -1,
               }}>
               SisCount
             </Text>
             <br />{' '}
-            <Text color={'#2E5F5D'} as={'span'}>
+            <Text color={'#030D27'} as={'span'}>
               Gestão Empresarial
             </Text>{' '}
           </Heading>
@@ -43,22 +43,22 @@ export default function SplitScreen() {
           <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
             <Button
               rounded={'full'}
-              bg={'#2E5F5D'}
+              bg={'#040E28'}
               color={'white'}
               _hover={{
                 bg: '#AABEBD',
               }}>
               <Link href={'/register'}>Registro</Link>
             </Button>
-            <Button bg='#AABEBD' rounded={'full'}><Link color={'white'} href={'/login'}>Login</Link></Button>
+            <Button bg='#030D27' rounded={'full'}><Link color={'white'} href={'/login'}>Login</Link></Button>
           </Stack>
         </Stack>
       </Flex>
-      <Flex flex={1}>
+      <Flex flex={0}>
         <Image
           alt={'Login Image'}
           objectFit={'cover'}
-          src={'/SisContBg2.png'}
+          src={'/LogoSiscount.png'}
         />
       </Flex>
     </Stack>

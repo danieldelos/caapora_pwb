@@ -77,7 +77,7 @@ export default function WithAction() {
 
   return (
     <>
-      <Box bg={useColorModeValue("#2E5F5D", "gray.900")}
+      <Box bg={useColorModeValue("#040E28", "gray.900")}
       //  px={4} opacity={0} _hover={{opacity: 1}} 
        px={4} 
        position="absolute" zIndex={1000} top={0} left={0} right={0}
@@ -92,7 +92,7 @@ export default function WithAction() {
           />
           <HStack spacing={8} alignItems={"center"}>
             <Box boxSize='8%'>
-              <Image src="/Logo2_bg_none.png"/>
+              <Image src="/LogoSiscountMini.png"/>
             </Box>
             <HStack
               as={"nav"}
@@ -149,10 +149,10 @@ export default function WithAction() {
       </Box>
       <Box>
         <SplitScreen />
-        <GridListWith/>
-        <ThreeTierPricing/>
-        <WithSpeechBubbles/>
-        <LargeWithNewsletter/>
+        {/* <GridListWith/> */}
+        {/* <ThreeTierPricing/> */}
+        {/* <WithSpeechBubbles/> */}
+        {/* <LargeWithNewsletter/> */}
       </Box>
     </>
   );
